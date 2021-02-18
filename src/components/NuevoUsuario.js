@@ -1,11 +1,11 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
-const NuevoUsuario = ({ nuevoUsuario }) => {
+const NuevoUsuario = (props) => {
 	const { register, handleSubmit, errors } = useForm();
 
 	const onSubmit = (data, evt) => {
-		nuevoUsuario(data);
+		props.agregarUsuario(data);
 		evt.target.reset();
 	};
 

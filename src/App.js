@@ -93,7 +93,6 @@ function App() {
 					<TablaUsuario
 						usuarios={usuarios}
 						eliminarUsuario={eliminarUsuario}
-						// editarUsuario={editarUsuario}
 						setEditando={setEditando}
 						actualizarRegistro={actualizarRegistro}
 					/>
